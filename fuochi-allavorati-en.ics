@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fuochi Allavorati//Luogosano 2026//IT
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:fuochi-allavorati-2026-luogosano
+DTSTAMP:20261112T120000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261209
+SUMMARY:Fuochi Allavorati — Luogosano
+LOCATION:Luogosano\, Avellino\, Campania\, Italia
+DESCRIPTION:Three days of tradition\, bonfires and music. 6–8 December 2026.
+END:VEVENT
+END:VCALENDAR
