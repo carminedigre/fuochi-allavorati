@@ -12,10 +12,23 @@ header nav a{display:inline-flex;align-items:center;min-height:44px}.hero-copy,.
 @media(max-width:600px){.hero-art{min-height:370px}.section{padding:52px 6%}h2{font-size:clamp(34px,8.5vw,48px);letter-spacing:-1.5px}.tabs button{padding:14px 8px;min-height:130px}.tabs span{font-size:9px;letter-spacing:.2px}.tabs small{font-size:11px;line-height:1.4;min-height:32px;margin-top:5px}.tabs b{font-size:32px}.event{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:23px 0}.event p{font-size:14px;line-height:1.6}.event h3{font-size:18px;line-height:1.35}.event time{font-size:11px}.program-note{font-size:13px;line-height:1.7}.program-bottom{font-size:12px;line-height:1.7}.day{min-height:0}.story-text p,.place p{font-size:16px;line-height:1.8}.place-mark p{font-size:10px}.visit-actions .button{width:100%;max-width:350px;min-height:52px}.visit-actions{margin-bottom:35px}.visit>p:not(.eyebrow){line-height:1.7}summary{font-size:15px;line-height:1.5;padding:8px 0}details p{font-size:14px}footer>a:last-of-type{min-height:44px;display:flex;align-items:center}footer p{font-size:12px}.credits{font-size:11px}.art-number{bottom:22px}.hero-date span{font-size:10px}}
 @media(max-width:360px){.hero h1,html[lang=en] .hero h1{font-size:40px}.ribbon{font-size:8px;gap:8px}.ribbon i{font-size:14px}.tabs small{font-size:10px}.tabs button{padding:12px 6px}.place-mark>div{font-size:68px}.art-caption p{font-size:34px}}
 @media(max-width:600px){.program-bottom a{display:flex;width:fit-content;margin-top:8px}}
-/* A dedicated, calm hero image replaces the enlarged event-poster crop. */
-.hero-art{background:#292622}.art-image{inset:0;background-image:url('falo-comunita.jpg');background-size:cover;background-position:50% 70%;transform:none}.art-shade{background:linear-gradient(180deg,rgba(22,20,17,.38),rgba(22,20,17,.08) 43%,transparent 65%,rgba(22,20,17,.42))}.art-credit{position:absolute;bottom:25px;left:35px;color:#eee5d8;font-size:9px;letter-spacing:.5px;max-width:65%;line-height:1.5}.art-number{bottom:25px}
-@media(max-width:760px){.hero-art{min-height:460px}.art-image{background-position:50% 83%}.art-shade{background:linear-gradient(180deg,rgba(22,20,17,.60),rgba(22,20,17,.10) 42%,transparent 65%,rgba(22,20,17,.45))}.art-credit{left:6%;bottom:20px}.art-number{bottom:20px}.art-caption{top:60px}.art-caption p{font-size:34px}}
-@media(max-width:360px){.hero-art{min-height:420px}.art-caption p{font-size:31px}}
+.hero-art { background: #142a42; }
+.art-image {
+  inset: 0;
+  background-image: url('scultura-fuochi.jpg');
+  background-size: cover;
+  background-position: center 80%;
+  transform: none;
+}
+.art-shade {
+  background: linear-gradient(180deg, rgba(10, 22, 34, .5), transparent 48%, transparent 82%, rgba(14, 18, 23, .65));
+}
+.art-label { top: 28px; }
+.art-caption { top: 55px; }
+.art-caption p { margin: 10px 0; font-size: clamp(29px, 3vw, 42px); }
+.art-credit{position:absolute;bottom:25px;left:35px;color:#eee5d8;font-size:9px;letter-spacing:.5px;max-width:65%;line-height:1.5}.art-number{bottom:25px}
+@media(max-width:760px){.hero-art{min-height:max(460px, 89vw)}.art-credit{left:6%;bottom:20px}.art-number{bottom:20px}.art-label{top:20px}.art-caption{top:42px}.art-caption p{font-size:28px}}
+@media(max-width:360px){.hero-art{min-height:420px}}
 
 .repository-link {
   display: inline-flex;
