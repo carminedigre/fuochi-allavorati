@@ -17,6 +17,32 @@ header nav a{display:inline-flex;align-items:center;min-height:44px}.hero-copy,.
 @media(max-width:760px){.hero-art{min-height:460px}.art-image{background-position:50% 83%}.art-shade{background:linear-gradient(180deg,rgba(22,20,17,.60),rgba(22,20,17,.10) 42%,transparent 65%,rgba(22,20,17,.45))}.art-credit{left:6%;bottom:20px}.art-number{bottom:20px}.art-caption{top:60px}.art-caption p{font-size:34px}}
 @media(max-width:360px){.hero-art{min-height:420px}.art-caption p{font-size:31px}}
 
+.repository-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 3px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 700;
+}
+.repository-link:hover { background: #3f4137; }
+@media (max-width: 760px) {
+  .header-actions { gap: 8px; }
+  .language-label select { padding-right: 16px; }
+  .repository-link { gap: 6px; padding: 0 10px; }
+}
+@media (max-width: 360px) {
+  header { column-gap: 6px; }
+  header > .brand, .header-actions { gap: 6px; }
+  .language-label select { padding-right: 10px; padding-left: 8px; }
+  .repository-link { padding: 0 8px; font-size: 12px; }
+  .repository-link span { display: none; }
+}
+
 .conference {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
