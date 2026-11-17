@@ -16,3 +16,49 @@ header nav a{display:inline-flex;align-items:center;min-height:44px}.hero-copy,.
 .hero-art{background:#292622}.art-image{inset:0;background-image:url('falo-comunita.jpg');background-size:cover;background-position:50% 70%;transform:none}.art-shade{background:linear-gradient(180deg,rgba(22,20,17,.38),rgba(22,20,17,.08) 43%,transparent 65%,rgba(22,20,17,.42))}.art-credit{position:absolute;bottom:25px;left:35px;color:#eee5d8;font-size:9px;letter-spacing:.5px;max-width:65%;line-height:1.5}.art-number{bottom:25px}
 @media(max-width:760px){.hero-art{min-height:460px}.art-image{background-position:50% 83%}.art-shade{background:linear-gradient(180deg,rgba(22,20,17,.60),rgba(22,20,17,.10) 42%,transparent 65%,rgba(22,20,17,.45))}.art-credit{left:6%;bottom:20px}.art-number{bottom:20px}.art-caption{top:60px}.art-caption p{font-size:34px}}
 @media(max-width:360px){.hero-art{min-height:420px}.art-caption p{font-size:31px}}
+
+.conference {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--orange);
+}
+.conference-date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 24px;
+  border-right: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.conference-day {
+  color: var(--orange);
+  font: 46px/1 Georgia, serif;
+}
+.conference .eyebrow { margin: 0 0 6px; }
+.conference h3 {
+  margin: 0;
+  font: 500 clamp(21px, 2vw, 28px)/1.25 'Playfair Display', Georgia, serif;
+}
+.conference-venue {
+  margin: 8px 0 0;
+  color: #62665a;
+  font-size: 14px;
+}
+.conference .text-link { gap: 8px; justify-self: start; }
+@media (max-width: 760px) {
+  .conference {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+  .conference-date {
+    padding: 0;
+    border: 0;
+  }
+}
