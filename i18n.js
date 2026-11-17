@@ -51,8 +51,8 @@ const translations = {
 'Un rito antico. Una comunità viva.':'An ancient tradition. A living community.','Locandina 2026 ↗':'2026 poster (Italian) ↗',
 'Pagina di promozione turistica basata sul racconto e sulla locandina forniti. Non è un sito istituzionale.':'A tourism page based on the supplied story and event poster. This is not an official institutional website.',
 'Fuochi Allavorati, inizio':'Fuochi Allavorati, home','Navigazione principale':'Main navigation','Giorni del programma':'Programme days',
-'Scena evocativa generata con IA: una comunità riunita intorno a un falò al crepuscolo':'AI-generated illustrative scene: a community gathered around a bonfire at dusk',
-'Immagine evocativa · IA':'Illustrative image · AI',
+'Scultura di una fiamma in metallo a Luogosano al crepuscolo':'Metal flame sculpture in Luogosano at dusk',
+'Immagine ritoccata con IA':'AI-retouched image',
 'Lingua del sito':'Website language','Automatico':'Automatic',
 'Non da spettatori. Da parte di noi. Vivi i Fuochi Allavorati a Luogosano, dal 6 all’8 dicembre 2026. Scopri il rito e il programma.':'Not as spectators. As one of us. Experience the Fuochi Allavorati in Luogosano, Italy, on 6–8 December 2026. Discover the tradition and programme.'
 };
