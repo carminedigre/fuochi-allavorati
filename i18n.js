@@ -1,5 +1,8 @@
-// Original Italian text is retained so switching languages is lossless.
+// Shared translations used by scripts/build-seo.mjs to render the English page.
 const translations = {
+'Fuochi Allavorati a Luogosano, dal 6 all’8 dicembre 2026. Falò nei rioni, musica popolare e tradizione in Irpinia.':'Fuochi Allavorati in Luogosano, 6–8 December 2026. Neighbourhood bonfires, folk music and tradition in Irpinia, Italy.',
+'Il programma 2026.':'The 2026 programme.','Tre giorni insieme.':'Three days together.',
+'Domenica 6 dicembre':'Sunday 6 December','Lunedì 7 dicembre':'Monday 7 December','Martedì 8 dicembre':'Tuesday 8 December',
 'Fuochi Allavorati — Luogosano, 6–8 dicembre 2026':'Fuochi Allavorati — Luogosano, 6–8 December 2026',
 'Vai al programma':'Skip to the programme',
 'Il rito':'The tradition','Il programma':'Programme','Vieni a viverli':'Experience it',
@@ -57,43 +60,18 @@ const translations = {
 'Non da spettatori. Da parte di noi. Vivi i Fuochi Allavorati a Luogosano, dal 6 all’8 dicembre 2026. Scopri il rito e il programma.':'Not as spectators. As one of us. Experience the Fuochi Allavorati in Luogosano, Italy, on 6–8 December 2026. Discover the tradition and programme.'
 };
 const languageSelect = document.getElementById('language');
-const languageKey = 'fuochi-language';
-const textEntries = [];
-const walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
-while (walker.nextNode()) {
-  const node = walker.currentNode;
-  if (node.parentElement.closest('script,style')) continue;
-  if (translations[node.textContent.trim()]) textEntries.push([node, node.textContent]);
-}
-const attributeEntries = [];
-document.querySelectorAll('[aria-label],meta[name="description"]').forEach(element => {
-  const name = element.tagName === 'META' ? 'content' : 'aria-label';
-  const original = element.getAttribute(name);
-  if (translations[original]) attributeEntries.push([element, name, original]);
-});
-function browserLanguage(languages) {
-  for (const language of languages) {
-    const base = language.toLowerCase().split('-')[0];
-    if (base === 'it' || base === 'en') return base;
-  }
-  return 'en';
-}
-function applyLanguage(preference) {
-  const language = preference === 'auto' ? browserLanguage(navigator.languages?.length ? navigator.languages : [navigator.language || 'en']) : preference;
-  document.documentElement.lang = language;
-  textEntries.forEach(([node, original]) => {
-    node.textContent = language === 'it' ? original : original.replace(original.trim(), translations[original.trim()]);
-  });
-  attributeEntries.forEach(([element, name, original]) => element.setAttribute(name, language === 'it' ? original : translations[original]));
-  document.querySelector('a[download]').href = language === 'en' ? 'fuochi-allavorati-en.ics' : 'fuochi-allavorati.ics';
-  languageSelect.value = preference;
-}
-let preference = 'auto';
-try { const saved = localStorage.getItem(languageKey); if (['it','en','auto'].includes(saved)) preference = saved; } catch {}
-applyLanguage(preference);
+const pageLanguage = document.documentElement.lang;
+languageSelect.value = pageLanguage;
+
 languageSelect.addEventListener('change', () => {
-  preference = languageSelect.value;
-  try { localStorage.setItem(languageKey, preference); } catch {}
-  applyLanguage(preference);
+  let language = languageSelect.value;
+  if (language === 'auto') {
+    const supported = (navigator.languages || [navigator.language || 'en'])
+      .map(value => value.toLowerCase().split('-')[0])
+      .find(value => value === 'it' || value === 'en');
+    language = supported || 'en';
+  }
+  if (language === pageLanguage) return;
+  const destination = document.querySelector(`a[data-language="${language}"]`);
+  window.location.assign(destination.href + window.location.hash);
 });
-window.addEventListener('languagechange', () => { if (preference === 'auto') applyLanguage('auto'); });

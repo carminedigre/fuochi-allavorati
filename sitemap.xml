@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://fuochiallavorati.it/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fuochiallavorati.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fuochiallavorati.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fuochiallavorati.it/"/>
+    <image:image><image:loc>https://fuochiallavorati.it/fuochi.jpg</image:loc></image:image>
+    <image:image><image:loc>https://fuochiallavorati.it/convegno.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://fuochiallavorati.it/en/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fuochiallavorati.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fuochiallavorati.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fuochiallavorati.it/"/>
+    <image:image><image:loc>https://fuochiallavorati.it/fuochi.jpg</image:loc></image:image>
+    <image:image><image:loc>https://fuochiallavorati.it/convegno.jpg</image:loc></image:image>
+  </url>
+</urlset>
