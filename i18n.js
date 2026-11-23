@@ -57,6 +57,7 @@ const translations = {
 'Scultura di una fiamma in metallo a Luogosano al crepuscolo':'Metal flame sculpture in Luogosano at dusk',
 'Immagine ritoccata con IA':'AI-retouched image',
 'Lingua del sito':'Website language','Automatico':'Automatic',
+'Musica di sottofondo':'Background music',
 'Non da spettatori. Da parte di noi. Vivi i Fuochi Allavorati a Luogosano, dal 6 all’8 dicembre 2026. Scopri il rito e il programma.':'Not as spectators. As one of us. Experience the Fuochi Allavorati in Luogosano, Italy, on 6–8 December 2026. Discover the tradition and programme.'
 };
 const languageSelect = document.getElementById('language');
