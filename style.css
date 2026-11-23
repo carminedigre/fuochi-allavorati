@@ -42,6 +42,27 @@ header nav a{display:inline-flex;align-items:center;min-height:44px}.hero-copy,.
   font-weight: 700;
 }
 .repository-link:hover { background: #3f4137; }
+
+.music-toggle {
+  position: fixed;
+  z-index: 5;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--paper);
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.music-toggle:hover { background: #3f4137; }
+.music-toggle[aria-pressed="true"] { font-size: 12px; }
 @media (max-width: 760px) {
   .header-actions { gap: 8px; }
   .language-label select { padding-right: 16px; }
