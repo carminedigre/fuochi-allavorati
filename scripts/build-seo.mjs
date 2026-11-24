@@ -180,7 +180,7 @@ await writeFile(new URL('index.md', root), markdownPage(italian, 'it'));
 await writeFile(new URL('en/index.md', root), markdownPage(english, 'en'));
 await writeFile(new URL('llms.txt', root), `# Fuochi Allavorati · Luogosano
 
-> Guida al rito dei Fuochi Allavorati di Luogosano, in provincia di Avellino, Campania, Italia. Edizione 2026, dal 6 all’8 dicembre, con convegno il 5 dicembre alle 16:30 al Teatro A. Buono.
+> Guida al rito dei Fuochi Allavorati di Luogosano, in provincia di Avellino, Campania, Italia. Edizione 2026, dal 6 all’8 dicembre, con convegno il 5 dicembre alle 16:30 al Ristorante La Veduta di Sant’Angelo all’Esca.
 
 Le versioni Markdown sono generate dallo stesso HTML delle pagine pubblicate. Tutti gli orari sono locali, nel fuso Europe/Rome. Le locandine originali sono le fonti del programma. La pagina presenta informazioni di promozione turistica. Prezzi, parcheggi, accessibilità e modalità di partecipazione al contest fotografico non sono specificati nel materiale fornito.
 

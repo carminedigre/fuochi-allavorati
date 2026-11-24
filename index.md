@@ -24,7 +24,7 @@ Dal primo gesto alla musica dell’ultima sera. Trova il tuo momento, vivili tut
 
 ### Fuochi Allavorati · Storia, radici e contemporaneità
 
-Teatro A. Buono · Luogosano
+Ristorante La Veduta · Sant’Angelo all’Esca
 
 [Locandina del convegno ↗](https://fuochiallavorati.it/convegno.jpg)
 

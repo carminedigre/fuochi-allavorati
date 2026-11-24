@@ -24,7 +24,7 @@ From the first gathering to the music of the final evening. Find your moment. Ex
 
 ### Fuochi Allavorati · History, roots and the present day
 
-Teatro A. Buono · Luogosano
+Ristorante La Veduta · Sant’Angelo all’Esca
 
 [Conference poster (Italian) ↗](https://fuochiallavorati.it/convegno.jpg)
 
