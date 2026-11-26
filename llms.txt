@@ -18,3 +18,4 @@ Le versioni Markdown sono generate dallo stesso HTML delle pagine pubblicate. Tu
 
 - [Locandina dei Fuochi Allavorati](https://fuochiallavorati.it/fuochi.jpg)
 - [Locandina del convegno](https://fuochiallavorati.it/convegno.jpg)
+- [Locandina della Tirata](https://fuochiallavorati.it/tirata.jpg)

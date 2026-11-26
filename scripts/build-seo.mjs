@@ -145,7 +145,7 @@ function markdownPage(html, language) {
     .replace(/<time class="conference-date"[^>]*>([\s\S]*?)<\/time>/g, (_, content) =>
       `<p>${content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()}</p>`)
     .replace(/<\/a>\s*<a/g, '</a>\n\n<a')
-    .replace(/<div class="event"><time>(.*?)<\/time><div><h3>(.*?)<\/h3><p>(.*?)<\/p><\/div><span>.*?<\/span><\/div>/g,
+    .replace(/<div class="event"><time\b[^>]*>(.*?)<\/time><div><h3>(.*?)<\/h3><p>(.*?)<\/p><\/div><span>.*?<\/span><\/div>/g,
       '\n\n- **$1 — $2**. $3\n')
     .replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g, (_, href, label) => {
       const caption = label.replace(/<[^>]*>/g, '').trim();
@@ -153,6 +153,9 @@ function markdownPage(html, language) {
     })
     .replace(/<h2\b[^>]*>/g, '\n\n## ')
     .replace(/<h3\b[^>]*>/g, '\n\n### ')
+    .replace(/<h4\b[^>]*>/g, '\n\n#### ')
+    .replace(/<li\b[^>]*>/g, '\n- ')
+    .replace(/<strong>(.*?)<\/strong>/g, '**$1**')
     .replace(/<p\b[^>]*>/g, '\n\n')
     .replace(/<\/span>/g, ' ')
     .replace(/<\/(?:h2|h3|p|div|article|details|blockquote|time)>/g, '\n\n')
@@ -170,10 +173,10 @@ function markdownPage(html, language) {
   const provenance = language === 'it'
     ? 'Informazioni tratte dalla pagina e dalle locandine fornite. Pagina di promozione turistica. Le parti coperte dalle scritte nella foto di apertura sono state ricostruite con IA. Il programma completo del convegno è nella locandina originale.'
     : 'Information comes from the page and supplied posters. This is a tourism promotion page. Areas covered by lettering in the hero photo were reconstructed using AI. The full conference programme is in the original poster.';
-  const posterLabels = language === 'it'
-    ? ['Locandina Fuochi Allavorati 2026', 'Locandina convegno 5 dicembre 2026']
-    : ['Fuochi Allavorati 2026 poster', '5 December 2026 conference poster'];
-  return `# ${titles[language]}\n\n> ${descriptions[language]}\n\n${url}\n\n${context}\n\n${decode(text)}\n\n${provenance}\n\n- [${posterLabels[0]}](${siteUrl}fuochi.jpg)\n- [${posterLabels[1]}](${siteUrl}convegno.jpg)\n`;
+  const posters = language === 'it'
+    ? ['Locandina Fuochi Allavorati 2026', 'Locandina convegno 5 dicembre 2026', 'Locandina della Tirata del 6 dicembre 2026']
+    : ['Fuochi Allavorati 2026 poster', '5 December 2026 conference poster', '6 December 2026 Tirata poster'];
+  return `# ${titles[language]}\n\n> ${descriptions[language]}\n\n${url}\n\n${context}\n\n${decode(text)}\n\n${provenance}\n\n- [${posters[0]}](${siteUrl}fuochi.jpg)\n- [${posters[1]}](${siteUrl}convegno.jpg)\n- [${posters[2]}](${siteUrl}tirata.jpg)\n`;
 }
 
 await writeFile(new URL('index.md', root), markdownPage(italian, 'it'));
@@ -198,6 +201,7 @@ Le versioni Markdown sono generate dallo stesso HTML delle pagine pubblicate. Tu
 
 - [Locandina dei Fuochi Allavorati](${siteUrl}fuochi.jpg)
 - [Locandina del convegno](${siteUrl}convegno.jpg)
+- [Locandina della Tirata](${siteUrl}tirata.jpg)
 `);
 await writeFile(new URL('robots.txt', root), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}sitemap.xml\n`);
 const urls = ['', 'en/'].map(path => `  <url>
@@ -207,6 +211,7 @@ const urls = ['', 'en/'].map(path => `  <url>
     <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}"/>
     <image:image><image:loc>${siteUrl}fuochi.jpg</image:loc></image:image>
     <image:image><image:loc>${siteUrl}convegno.jpg</image:loc></image:image>
+    <image:image><image:loc>${siteUrl}tirata.jpg</image:loc></image:image>
   </url>`);
 await writeFile(new URL('sitemap.xml', root), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">

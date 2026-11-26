@@ -28,9 +28,27 @@ Ristorante La Veduta · Sant’Angelo all’Esca
 
 [Locandina del convegno ↗](https://fuochiallavorati.it/convegno.jpg)
 
+### Programma e relatori del convegno
+
+Saluti di benvenuto di Nicoletta Loglisci, presidente della Pro Loco Locossano APS. Presenta e modera il giornalista Enzo Costanza.
+
+Saluti istituzionali di Angelo Antonio Di Gregorio, sindaco di Luogosano, e Fausto Picone, presidente della Provincia di Avellino.
+
+#### Relazioni
+
+- **Angelo Antonio Di Gregorio** · Quale cultura per l’identità di un territorio
+
+- **Vincenzo Esposito** · Antropologia e ritualità del fuoco
+
+- **Giovanni Ferrante** · I riti dei fuochi in Irpinia e i Fuochi Allavorati di Luogosano
+
+Intervengono Mariacarmela Serluca, Teodoro Boccuzzi, Domenico Biancardi, Luigi Barbati e Giuseppe Silvestri.
+
 ### Domenica 6 dicembre
 
-- **14:00 — La tirata re lo cippo**. A cura della Pro Loco Locossano APS
+- **12:30 — Ritrovo e pranzo della Tirata**. Via F. De Sanctis · Luogosano
+
+- **14:00 — La tirata re lo cippo**. Partenza da Via F. De Sanctis, Luogosano. Con la street music della Pig Band. A cura della Pro Loco Locossano APS con il Comune di Luogosano. [Locandina della Tirata ↗](https://fuochiallavorati.it/tirata.jpg)
 
 - **20:30 — Accensione dell’Albero**. Il paese si ritrova, l’attesa si fa luce.
 
@@ -80,3 +98,4 @@ Informazioni tratte dalla pagina e dalle locandine fornite. Pagina di promozione
 
 - [Locandina Fuochi Allavorati 2026](https://fuochiallavorati.it/fuochi.jpg)
 - [Locandina convegno 5 dicembre 2026](https://fuochiallavorati.it/convegno.jpg)
+- [Locandina della Tirata del 6 dicembre 2026](https://fuochiallavorati.it/tirata.jpg)

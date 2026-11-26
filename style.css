@@ -110,6 +110,21 @@ header nav a{display:inline-flex;align-items:center;min-height:44px}.hero-copy,.
   font-size: 14px;
 }
 .conference .text-link { gap: 8px; justify-self: start; }
+.conference-programme {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  border-top-color: var(--line);
+  padding-bottom: 0;
+}
+.conference-programme p, .conference-programme ul {
+  color: #505348;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.conference-programme h4 { margin-bottom: 8px; }
+.conference-programme ul { margin-top: 0; padding-left: 20px; }
+.event .text-link { gap: 8px; color: var(--ink); }
 @media (max-width: 760px) {
   .conference {
     grid-template-columns: minmax(0, 1fr);

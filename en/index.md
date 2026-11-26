@@ -28,9 +28,27 @@ Ristorante La Veduta · Sant’Angelo all’Esca
 
 [Conference poster (Italian) ↗](https://fuochiallavorati.it/convegno.jpg)
 
+### Conference programme and speakers
+
+Welcome from Nicoletta Loglisci, president of Pro Loco Locossano APS. Journalist Enzo Costanza hosts and moderates.
+
+Opening remarks by Angelo Antonio Di Gregorio, mayor of Luogosano, and Fausto Picone, president of the Province of Avellino.
+
+#### Talks
+
+- **Angelo Antonio Di Gregorio** · How culture shapes local identity
+
+- **Vincenzo Esposito** · The anthropology and rituals of fire
+
+- **Giovanni Ferrante** · Fire rituals in Irpinia and the Fuochi Allavorati of Luogosano
+
+Additional speakers include Mariacarmela Serluca, Teodoro Boccuzzi, Domenico Biancardi, Luigi Barbati and Giuseppe Silvestri.
+
 ### Sunday 6 December
 
-- **14:00 — La tirata re lo cippo**. Organised by Pro Loco Locossano APS
+- **12:30 — Tirata gathering and lunch**. Via F. De Sanctis · Luogosano
+
+- **14:00 — La tirata re lo cippo**. Starts on Via F. De Sanctis, Luogosano, with street music by Pig Band. Organised by Pro Loco Locossano APS with the Municipality of Luogosano. [Tirata poster (Italian) ↗](https://fuochiallavorati.it/tirata.jpg)
 
 - **20:30 — Lighting of the Christmas tree**. The village gathers as the anticipation turns to light.
 
@@ -80,3 +98,4 @@ Information comes from the page and supplied posters. This is a tourism promotio
 
 - [Fuochi Allavorati 2026 poster](https://fuochiallavorati.it/fuochi.jpg)
 - [5 December 2026 conference poster](https://fuochiallavorati.it/convegno.jpg)
+- [6 December 2026 Tirata poster](https://fuochiallavorati.it/tirata.jpg)
